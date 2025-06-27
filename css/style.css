@@ -1,73 +1,86 @@
 /* Estilos generales */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Merriweather', serif;
+  background-color: #f0e6d2; /* Color papel antiguo */
+  margin: 0;
+  padding: 0;
+  color: #3a3226;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+.contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
 }
 
-/* Encabezado */
-.header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+header {
+  text-align: center;
+  margin: 30px 0;
 }
 
-.header h1 {
-    font-weight: 300;
-    font-size: 2.8rem;
-    margin: 0;
-    color: #2c3e50;
+header h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.5rem;
+  color: #5d3a1a;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.header h2 {
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin: 10px 0 0;
-    color: #7f8c8d;
-}
-
-/* Menú */
+/* Botones con forma de lomos de libros */
 .menu {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px 0;
+  flex-wrap: wrap;
 }
 
-.menu-btn {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: 700;
-    font-size: 1.1rem;
-    padding: 10px 20px;
-    border: 2px solid #2c3e50;
-    border-radius: 30px;
-    transition: all 0.3s ease;
+.boton-libro {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  color: #3a3226;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 12px 25px;
+  background: linear-gradient(to right, #e8d9c5, #d4c4a8);
+  border: none;
+  border-radius: 0 15px 15px 0; /* Forma de lomo */
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
 }
 
-.menu-btn:hover {
-    background-color: #2c3e50;
-    color: white;
+/* Efecto de libro abierto */
+.boton-libro:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, #d4c4a8, #c2b38c);
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-    .header h1 {
-        font-size: 2rem;
-    }
+/* Detalle del lomo */
+.boton-libro::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 5px;
+  background: linear-gradient(to bottom, #8b5a2b, #5d3a1a);
+  border-radius: 0 5px 5px 0;
+}
+
+/* Velas (ajusta según necesites) */
+.vela {
+  position: absolute;
+  height: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vela-izquierda {
+  left: 10px;
+}
+
+.vela-derecha {
+  right: 10px;
 }
