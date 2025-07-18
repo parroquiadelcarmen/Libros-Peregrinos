@@ -8,43 +8,46 @@
 </head>
 <body>
 
-    <header>
-        <img src="img/logo.png" alt="Libros Peregrinos" class="logo">
-    </header>
+<header>
+    <img src="img/logo.png" alt="Libros Peregrinos" class="logo">
+</header>
 
-    <main>
-        <section class="slide hero">
-            <img src="img/virgen.png" alt="Virgen del Carmen" class="virgen">
-            <h1>Libros Peregrinos</h1>
-            <p>Una biblioteca solidaria e itinerante de la Parroquia Nuestra Señora del Carmen.</p>
-        </section>
+<main>
+    <section class="slide hero">
+        <div class="text">
+            <h1>Biblioteca Comunitaria <br>"Libros Peregrinos"</h1>
+            <p>Tu plataforma de autogestión para compartir conocimiento entre feligreses. Descubre, reserva y disfruta de libros físicos de la comunidad, con la promesa de un futuro digital accesible para todos.</p>
+            <div class="botones">
+                <a href="#" class="btn">Explorar Catálogo</a>
+                <a href="#" class="btn secundario">Registrarse</a>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="img/virgen.png" alt="Virgen del Carmen">
+        </div>
+    </section>
 
-        <section class="slide">
-            <h2>¿Cómo funciona?</h2>
-            <p>Los libros peregrinan de hogar en hogar. Los feligreses los hospedan temporalmente en sus casas y los comparten con otros miembros de la comunidad.</p>
-        </section>
+    <section class="slide">
+        <h2>Descubre Nuestro Catálogo Compartido</h2>
+        <p>Explora nuestra colección completa de libros aportados por miembros de la comunidad. Navega por categorías, autores o títulos específicos para encontrar exactamente lo que buscas.</p>
+    </section>
 
-        <section class="slide">
-            <h2>Participá</h2>
-            <p>Si querés ser parte, podés recibir un libro en tu casa o compartir alguno que ya hayas leído.</p>
-        </section>
+    <section class="slide contacto">
+        <h2>Contacto</h2>
+        <form id="contacto-form">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="respuesta"></p>
+    </section>
+</main>
 
-        <section class="slide contacto">
-            <h2>Contacto</h2>
-            <form id="contacto-form">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo" required>
-                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <p id="respuesta"></p>
-        </section>
-    </main>
+<footer>
+    <p>Parroquia Nuestra Señora del Carmen - Libros Peregrinos © 2025</p>
+</footer>
 
-    <footer>
-        <p>Parroquia Nuestra Señora del Carmen - Libros Peregrinos © 2025</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
